@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="https://kit.fontawesome.com/18c171e3f9.js"></script>
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="css/style.css">
+<title>Document</title>
+<style>
+    #map {
+      height: 100%;
+    }
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+  </style>
+</head>
+<body>
+    <div id="right-social" class="btn-group-vertical" role="group" aria-label="...">
+        <div class="button-hover">
+            <button id="circle" class="btn" type="submit">
+                <a href="#">
+                    <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+                </a>
+                <a id="more" type="button" class="btn btn-default btn-lg" href="#" role="button">замовити зворотній дзвінок</a>
+            </button>
+        </div>
+        <div class="button-hover">
+            <button id="circle" class="btn" type="submit">
+                    <a href="#">
+                        <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+                    </a>
+                    <a id="more" type="button" class="btn btn-default btn-lg" href="#" role="button">Обміняти email на знижку</a>
+            </button>
+        </div>
+        <div class="button-hover">
+            <button id="circle" class="btn" type="submit">
+                    <a href="#">
+                        <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                    </a>
+                    <a id="more3" type="button" class="btn btn-default btn-lg" href="#" role="button">Відправити нам email</a>
+            </button>
+        </div>
+    </div>
+    <div class="container-fluid head-bg">
+        <div class="row">
+        <div class="tool-bar"></div>
+        	<div class="container">
+        		<div class="row">
+	    			<div class="mywrap">
+		                <div class="logo col-xs-12 col-md-5">
+		                    <img src="images/Лого.png" alt="логотип">
+		                </div>
+	                    <div class="col-xs-2">
+	                            <button type="button" class="btn btn-default dropdown-toggle my-LangBtn-Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	                                Lang <span class="caret"></span>
+	                            </button>
+	                            <ul class="dropdown-menu">
+	                                <li><a href="#">En</a></li>
+	                                <li><a href="#">Ru</a></li>
+	                                <li><a href="#">Ua</a></li>
+	                            </ul>
+	                    </div>
+	                    <div class="pull-right">
+	                        <button class="btn btn-primary basket-sm" type="button">
+	                            <p class="basket-icon">
+	                                <i class="fas fa-shopping-basket my-basket-icon"></i>
+	                            </p>
+	                            <span class="badge my-badge">27</span>
+	                            <p class="text">
+	                                <span>Кошик: </span>27 товарів
+	                            </p>
+	                        </button>
+	                    </div>
+		            </div>
+        		</div>
+        	</div>
+    	</div>
+	</div>
+           <div class="container-fluid tool-bar"></div>
+    		<div class="container-fluid nav-bg">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <nav class="navbar navbar-default ">
+                                <div class="cont-my-navbar">
+                                    <!-- Brand and toggle get grouped for better mobile display -->
+                                    <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    </div>
+                                    <!-- Collect the nav links, forms, and other content for toggling -->
+                                    <div class="collapse navbar-collapse my-navbar" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav my-navbar-nav col-xs-12">
+                                        <li class="active col-xs-12 col-md-2"><a href="#">Новини<span class="sr-only">(current)</span></a></li>
+                                        <li class="col-xs-12 col-md-2"><a href="#">Магазин</a></li>
+                                        <li class="col-xs-12 col-md-2"><a href="#">Дилери</a></li>
+                                        <li class="col-xs-12 col-md-2"><a href="#">Доставка</a></li>
+                                        <li class="col-xs-12 col-md-2"><a href="#">Про нас</a></li>
+                                        <li class="col-xs-12 col-md-2"><a href="#">Контакти</a></li>
+                                    </ul>
+                                    </div><!-- /.navbar-collapse -->
+                                </div><!-- /.container-fluid -->
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <div class="container-fluid tabs-bg">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                        <ul class="nav nav-tabs center my-navTabs">
+                            <li class="tactical active"><a data-toggle="tab" href="#tactical">Tactical</a></li>
+                            <li class="highland"><a data-toggle="tab" href="#highland">Highland</a></li>
+                            <li class="simple"><a data-toggle="tab" href="#simple">Simple</a></li>
+                        </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="container-fluid series-bg">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="tab-content">
+                        <div id="tactical" class="tab-pane fade in active">
+                            <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-0 description">
+                                    <p>серія</p>
+                                    <h2>tactical</h2>
+                                    <p class="heading"><span>Власна розробка</span> українських військових, що увібрала в себе <span>найкраще</span> з нині можливого:</p>
+                                    <div class="properties">
+                                        <p>якість тканин і пошиву</p>
+                                        <p>зручність крою</p>
+                                        <p>функціональність у використанні</p>
+                                    </div>
+                                    <p class="send-to-catalog"><a href="#">перейти до каталогу</a></p>
+                                </div>
+                                <div class="col-xs-12 col-sm-10 col-sm-offset-2 oficer col-md-8 hidden-lg wrapper-for-img">
+                                    <img src="images/oficer.png" alt="example">
+                                </div>
+                                <div class="col-lg-8 oficer hidden-xs hidden-sm hidden-md wrapper-for-img">
+                                    <img src="images/oficers-lg.png" alt="example">
+                            </div>
+                        </div>
+                        <div id="highland" class="tab-pane fade">
+                            <div class="col-xs-12 some-content">
+                                <p> Some Content <span>Higland</span></p>
+                            </div>
+                        </div>
+                        <div id="simple" class="tab-pane fade">
+                            <div class="col-xs-12 some-content-simple">
+                                <p> Some Content <span>Simple</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid textile">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+                              <div class="item active">
+                                    <div class="col-xs-12 title">
+                                        <h3 class="text-center">Тканина</h3>
+                                    </div>
+                                    <div class="col-xs-12  tool-strip"></div>
+                                    <div class="col-xs-10 col-xs-offset-1 col-md-offset-1 type-of-textile">
+                                        <h4>тип тканини:<span>кордура</span></h4>
+                                        <p class="description-textile">Тканина кордура - нейлонова водонепроникна тканина з підвищеною стійкістю до будь-яких механічних впливів. PU просочення і особливе плетіння ниток забезпечують повну водоніпроніцаемость. Тканина стійка до перепадів температур і впливу ультрафіолету.</p>
+                                        <p class="advantages"><span>Переваги:</span> вологостійкість, вогнестійкість</p>
+                                        <p class="colors-to-sale">Доступні кольори:</p>
+                                        <div class="row wrap-for-textile-colors">
+                                            <div class="col-xs-2 col-md-2 col-lg-1"><img src="images/1 textile-color.png" alt="textile-color"></div>
+                                            <div class="col-xs-2 col-md-2 col-lg-1"><img src="images/2 textile-color.png" alt="textile-color"></div>
+                                            <div class="clearfix visible-xs hidden-md hidden-lg"></div>
+                                            <div class="col-xs-2 col-md-2 col-lg-1"><img src="images/3 textile-color.png" alt="textile-color"></div>
+                                            <div class=" clearfix visible-sm visible-md hidden-xs"></div>
+                                            <div class="col-xs-2 col-md-2 col-lg-1"><img src="images/4 textile-color.png" alt="textile-color"></div>
+                                            <div class="clearfix visible-xs  hidden-md hidden-lg"></div>
+                                            <div class="col-xs-2 hidden-xs col-md-2 col-lg-1"><img src="images/5 textile-color.png" alt="textile-color"></div>
+                                            <div class="col-xs-2 hidden-xs col-md-2 col-lg-1"><img src="images/6 textile-color.png" alt="textile-color"></div>
+                                        </div>
+                                            
+                                        <p class="send-to-catalog"><a href="#">перейти до каталогу</a></p>
+                                    </div>
+                              </div>
+                              <div class="item">
+                                    <div class="col-xs-12 title">
+                                        <h3 class="text-center">Тканина</h3>
+                                    </div>
+                                    <div class="col-xs-12  tool-strip"></div>
+                                    <div class="col-xs-10 col-xs-offset-1 col-md-offset-1 type-of-textile">
+                                        <h4>тип тканини:<span>кордура</span></h4>
+                                        <p class="description-textile">Тканина кордура - нейлонова водонепроникна тканина з підвищеною стійкістю до будь-яких механічних впливів. PU просочення і особливе плетіння ниток забезпечують повну водоніпроніцаемость. Тканина стійка до перепадів температур і впливу ультрафіолету.</p>
+                                        <p class="advantages"><span>Переваги:</span> вологостійкість, вогнестійкість</p>
+                                        <p class="colors-to-sale">Доступні кольори:</p>
+                                        <div class="row wrap-for-textile-colors">
+                                            <div class="col-xs-2 col-md-2 col-lg-1"><img src="images/1 textile-color.png" alt="textile-color"></div>
+                                            <div class="col-xs-2 col-md-2 col-lg-1"><img src="images/2 textile-color.png" alt="textile-color"></div>
+                                            <div class="clearfix visible-xs hidden-md hidden-lg"></div>
+                                            <div class="col-xs-2 col-md-2 col-lg-1"><img src="images/3 textile-color.png" alt="textile-color"></div>
+                                            <div class=" clearfix visible-sm visible-md hidden-xs"></div>
+                                            <div class="col-xs-2 col-md-2 col-lg-1"><img src="images/4 textile-color.png" alt="textile-color"></div>
+                                            <div class="clearfix visible-xs  hidden-md hidden-lg"></div>
+                                            <div class="col-xs-2 hidden-xs col-md-2 col-lg-1"><img src="images/5 textile-color.png" alt="textile-color"></div>
+                                            <div class="col-xs-2 hidden-xs col-md-2 col-lg-1"><img src="images/6 textile-color.png" alt="textile-color"></div>
+                                        </div>
+                                        <p class="send-to-catalog"><a href="#">перейти до каталогу</a></p>
+                                    </div>
+                              </div>
+                        </div>
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <div class="container-fluid how-weWork   ">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 title">
+                        <h3 class="text-center">як ми працюем</h3>
+                    </div>
+                    <div class="col-xs-12  tool-strip"></div>   
+                		<div class="section-we-work col-xs-12">
+                            <div class="col-xs-7">
+                                <img src="images/1 how-we-work-1.png" class="img-responsive" alt="Responsive image">
+                            </div>
+                            <div class="col-xs-5 we-work-text">
+                                <h4>спочатку <span>Ідея</span></h4>
+                                <p>Усі моделі розробляються українськими  військовими, тому моделі досконалі та зручні</p>
+                                <p>Кожен елемент моделі знаходиться на своєму функціональному місці, для нього підібраний найкращий крій та матеріали, використовується найдосконаліша фурнітура</p>
+                                <p class="">Ідея постійно вдосконалюється, враховуються всі помилки, завдяки налагодженому діалогу з реальними користувачами форми</p>
+                            </div>
+                        </div>
+
+                        <div class="section-we-work col-xs-12">
+                            <div class="col-xs-5 we-work-text ">
+                                <h4>потім <span>створення речі</span></h4>
+                                <p>Виробництво налагоджене на власних виробничих потужностях, а отже якість виробу контролюється нами особисто</p>
+                                <p>Для зменшення помилок через людський фактор, всі процеси максимально автоматизованіv</p>
+                                <p>Кожен вироблений зразок гарантованно проходить контроль якості. Помилки виключені</p>
+                            </div>
+                            <div class="col-xs-7">
+                                <img src="images/2 how-we-work.png" class="img-responsive" alt="Responsive image">
+                            </div>
+                            
+                        </div>
+
+                        <div class="section-we-work col-xs-12">
+                            <div class="col-xs-7">
+                                <img src="images/3 how-we-work.png" class="img-responsive" alt="Responsive image">
+                            </div>
+                            <div class="col-xs-5 we-work-text third-we-work">
+                                <h4>І нарешті <span>тестування</span></h4>
+                                <p>Одяг тестується як на полігонах, так і у реальних умовах АТО</p>
+                                <p>Постійно збирається статистика відгуків та побажань</p>
+                                <p class="">Всі доцільні відгуки користувачів нашої продукції завжди трансформуються у нові ідеї</p>
+                            </div>
+                        </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <div class="container-fluid dilers">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 title">
+                        <h3 class="text-center">наші дилери</h3>
+                    </div>
+                    <div class="col-xs-12  tool-strip"></div>
+                </div>
+            </div>
+            <div class="col-xs-12 google-map">
+                <div id="map"></div>
+            </div>
+            
+            <!-- <img src="images/map-of-dilers.png" class="img-responsive" alt="Responsive image"> -->
+            <div class="tool-bar col-xs-12"></div>
+        </div>
+    </div>
+    <div class="container-fluid footer">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="phones col-xs-12 col-sm-6 col-md-4 col-md-push-8">
+                        <p>замовити зворотній дзвінок</p>
+                        <p>+38 (050)<span> 317-64-44</span></p>
+                        <p>+38 (067)<span> 325-57-53</span></p>
+                    </div>
+                    <div class="adres col-xs-12 col-sm-6 col-md-4">
+                        <p><a href="#">sales@brother-hood.com.ua</a></p>
+                        <p class="metro">ст.м "Либідська"</p>
+                        <p>м. Київ, вул. К. Малевича, 86 І</p>
+                    </div>
+                    <div class="col-xs-12 col-md-4 col-md-pull-8">
+                        <img src="images/Лого.png" class="img-responsive" alt="Responsive image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var map;
+        function initMap() {
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat:49.23912083, lng: 31.88232422},
+            zoom: 6,
+            styles:[
+            {
+            "featureType": "all",
+            "elementType": "labels.text.fill",
+            "stylers": [
+                {
+                    "saturation": 36
+                },
+                {
+                    "color": "#000000"
+                },
+                {
+                    "lightness": 40
+                }
+            ]
+        },
+        {
+            "featureType": "all",
+            "elementType": "labels.text.stroke",
+            "stylers": [
+                {
+                    "visibility": "on"
+                },
+                {
+                    "color": "#000000"
+                },
+                {
+                    "lightness": 16
+                }
+            ]
+        },
+        {
+            "featureType": "all",
+            "elementType": "labels.icon",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "administrative",
+            "elementType": "geometry.fill",
+            "stylers": [
+                {
+                    "color": "#000000"
+                },
+                {
+                    "lightness": 20
+                }
+            ]
+        },
+        {
+            "featureType": "administrative",
+            "elementType": "geometry.stroke",
+            "stylers": [
+                {
+                    "color": "#000000"
+                },
+                {
+                    "lightness": 17
+                },
+                {
+                    "weight": 1.2
+                }
+            ]
+        },
+        {
+            "featureType": "administrative",
+            "elementType": "labels",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "administrative.country",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "visibility": "simplified"
+                }
+            ]
+        },
+        {
+            "featureType": "administrative.country",
+            "elementType": "geometry",
+            "stylers": [
+                {
+                    "visibility": "simplified"
+                }
+            ]
+        },
+        {
+            "featureType": "administrative.country",
+            "elementType": "labels.text",
+            "stylers": [
+                {
+                    "visibility": "simplified"
+                }
+            ]
+        },
+        {
+            "featureType": "administrative.province",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "administrative.locality",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "visibility": "simplified"
+                },
+                {
+                    "saturation": "-100"
+                },
+                {
+                    "lightness": "30"
+                }
+            ]
+        },
+        {
+            "featureType": "administrative.neighborhood",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "administrative.land_parcel",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "landscape",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "visibility": "simplified"
+                },
+                {
+                    "gamma": "0.00"
+                },
+                {
+                    "lightness": "74"
+                }
+            ]
+        },
+        {
+            "featureType": "landscape",
+            "elementType": "geometry",
+            "stylers": [
+                {
+                    "color": "#000000"
+                },
+                {
+                    "lightness": 20
+                }
+            ]
+        },
+        {
+            "featureType": "landscape.man_made",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "lightness": "3"
+                }
+            ]
+        },
+        {
+            "featureType": "poi",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "poi",
+            "elementType": "geometry",
+            "stylers": [
+                {
+                    "color": "#000000"
+                },
+                {
+                    "lightness": 21
+                }
+            ]
+        },
+        {
+            "featureType": "road",
+            "elementType": "geometry",
+            "stylers": [
+                {
+                    "visibility": "simplified"
+                }
+            ]
+        },
+        {
+            "featureType": "road.highway",
+            "elementType": "geometry.fill",
+            "stylers": [
+                {
+                    "color": "#000000"
+                },
+                {
+                    "lightness": 17
+                }
+            ]
+        },
+        {
+            "featureType": "road.highway",
+            "elementType": "geometry.stroke",
+            "stylers": [
+                {
+                    "color": "#000000"
+                },
+                {
+                    "lightness": 29
+                },
+                {
+                    "weight": 0.2
+                }
+            ]
+        },
+        {
+            "featureType": "road.arterial",
+            "elementType": "geometry",
+            "stylers": [
+                {
+                    "color": "#000000"
+                },
+                {
+                    "lightness": 18
+                }
+            ]
+        },
+        {
+            "featureType": "road.local",
+            "elementType": "geometry",
+            "stylers": [
+                {
+                    "color": "#000000"
+                },
+                {
+                    "lightness": 16
+                }
+            ]
+        },
+        {
+            "featureType": "transit",
+            "elementType": "geometry",
+            "stylers": [
+                {
+                    "color": "#000000"
+                },
+                {
+                    "lightness": 19
+                }
+            ]
+        },
+        {
+            "featureType": "water",
+            "elementType": "geometry",
+            "stylers": [
+                {
+                    "color": "#000000"
+                },
+                {
+                    "lightness": 17
+                }
+            ]
+        }
+            ]
+        });
+            var chernigov = { lat:51.495171, lng:31.281267};
+            var marker = new google.maps.Marker({
+            position:chernigov,
+            map: map,
+            title:"",
+            icon:'images/marker.png'
+            });
+
+            var sumy = { lat:50.947606, lng:34.786059};
+            var marker = new google.maps.Marker({
+            position:sumy,
+            map: map,
+            title:"",
+            icon:'images/marker.png'
+            });
+            
+            var kharkiv = { lat:50.088437,lng:36.212345};
+            var marker = new google.maps.Marker({
+            position:kharkiv,
+            map: map,
+            title:"",
+            icon:'images/marker.png'
+            });
+
+            var lugansk = { lat:48.670297,lng:39.282114};
+            var marker = new google.maps.Marker({
+            position:lugansk,
+            map: map,
+            title:"",
+            icon:'images/marker.png'
+            });
+
+            var donezk = { lat:48.113960,lng:37.776618};
+            var marker = new google.maps.Marker({
+            position:donezk,
+            map: map,
+            title:"",
+            icon:'images/marker.png'
+            });
+
+            var mariupol = { lat:47.184613,lng:37.522902};
+            var marker = new google.maps.Marker({
+            position:mariupol,
+            map: map,
+            title:"",
+            icon:'images/marker.png'
+            });
+            
+            var zaporizhya = { lat:48.030928,lng:35.109426};
+            var marker = new google.maps.Marker({
+            position:zaporizhya,
+            map: map,
+            title:"",
+            icon:'images/marker.png'
+            });
+
+            var dnepr = { lat:48.624050,lng:35.027126};
+            var marker = new google.maps.Marker({
+            position:dnepr,
+            map: map,
+            title:"",
+            icon:'images/marker.png'
+            });
+
+            var poltava = { lat:49.679616,lng:34.525651};
+            var marker = new google.maps.Marker({
+            position:poltava,
+            map: map,
+            title:"",
+            icon:'images/marker.png'
+            });
+
+            var cherkasy = { lat:49.479764,lng:32.050944};
+            var marker = new google.maps.Marker({
+            position:cherkasy,
+            map: map,
+            title:"",
+            icon:'images/marker.png'
+            });
+
+            var kremenchug = { lat:49.110361,lng:33.400042};
+            var marker = new google.maps.Marker({
+            position:kremenchug,
+            map: map,
+            title:"",
+            icon:'images/marker.png'
+            });
+
+            var kropyv = { lat:48.587148,lng:32.252396};
+            var marker = new google.maps.Marker({
+            position:kropyv,
+            map: map,
+            title:"",
+            icon:'images/marker.png'
+            });
+
+            var krivoyrog = { lat:48.069705,lng:33.365107};
+            var marker = new google.maps.Marker({
+            position:krivoyrog,
+            map: map,
+            title:"",
+            icon:'images/marker.png'
+            });
+
+            var nikolaev = { lat:47.062233,lng:31.997001};
+            var marker = new google.maps.Marker({
+            position:nikolaev,
+            map: map,
+            title:"",
+            icon:'images/marker.png'
+            });
+            
+            var kherson = { lat:46.668638,lng:32.608466};
+            var marker = new google.maps.Marker({
+            position:kherson,
+            map: map,
+            title:"",
+            icon:'images/marker.png'
+            });
+
+            var odessa = { lat:46.574705,lng:30.704912};
+            var marker = new google.maps.Marker({
+            position:odessa,
+            map: map,
+            title:"",
+            icon:'images/marker.png'
+            });
+            
+            var kyiv = { lat:50.506707,lng:30.513315};
+            var marker = new google.maps.Marker({
+            position:kyiv,
+            map: map,
+            title:"",
+            icon:'images/marker.png'
+            });
+
+            var zhytomyr = { lat:50.291780,lng:28.654146};
+            var marker = new google.maps.Marker({
+            position:zhytomyr,
+            map: map,
+            title:"",
+            icon:'images/marker.png'
+            });
+
+            var vinniza = { lat:49.275720,lng:28.459675};
+            var marker = new google.maps.Marker({
+            position:vinniza,
+            map: map,
+            title:"",
+            icon:'images/marker.png'
+            });
+            
+            var chernovzy = { lat:48.337241,lng:25.929103};
+            var marker = new google.maps.Marker({
+            position:chernovzy,
+            map: map,
+            title:"",
+            icon:'images/marker.png'
+            });
+            
+            var lviv = { lat:49.883575,lng:24.022190};
+            var marker = new google.maps.Marker({
+            position:lviv,
+            map: map,
+            title:"",
+            icon:'images/marker.png'
+            });
+            49.883575, 24.022190
+
+        }
+        
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzbWtw7v2ePl7Vt_tr6tW-nN7tfCnK10E&callback=initMap"
+      async defer></script>
+</body>
+</html>
