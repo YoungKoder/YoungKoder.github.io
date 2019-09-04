@@ -1,0 +1,308 @@
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: local('Helvetica Neue Bold'), local('Helvetica-Neue-Bold'),
+        url('../font/HelveticaNeueCyr-Bold/HelveticaNeueCyr-Bold.woff2') format('woff2'),
+        url('../font/HelveticaNeueCyr-Bold/HelveticaNeueCyr-Bold.woff') format('woff'),
+        url('../font/HelveticaNeueCyr-Bold/HelveticaNeueCyr-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+@font-face{
+    font-family:'Helvetica Neue';
+    src: local('Helvetica Neue Regular'), local('Helvetica-Neue-Regular'),
+        url('../font/HelveticaNeue-Regular/HelveticaNeue.eot'),
+        url('../font/HelveticaNeue-Regular/HelveticaNeue.woff') format('woff'),
+        url('../font/HelveticaNeue-Regular/HelveticaNeue.ttf') format('truetype');
+    font-weight:400;
+    font-style:normal;
+}
+@font-face {
+    font-family: 'Myriad Pro Regular';
+    src: url('../font/MyriadPro/MyriadPro-Regular.eot');
+    src: url('../font/MyriadPro/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+            url('../font/MyriadPro/MyriadPro-Regular.woff') format('woff'),
+            url('../font/MyriadPro/MyriadPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Nova Regular';
+    src: url('../font/ProximaNova/ProximaNova-Regular.eot');
+    src: url('../font/ProximaNova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../font/ProximaNova/ProximaNova-Regular.woff') format('woff'),
+        url('../font/ProximaNova/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Nova Bold';
+    src: url('../font/ProximaNovaBold/ProximaNova-Bold.eot');
+    src: url('../font/ProximaNovaBold/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/ProximaNovaBold/ProximaNova-Bold.woff') format('woff'),
+        url('../font/ProximaNovaBold/ProximaNova-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Nova Semibold';
+    src: url('../font/ProximaNova-SemiBold/ProximaNova-Semibold.eot');
+    src: url('../font/ProximaNova-SemiBold/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../font/ProximaNova-SemiBold/ProximaNova-Semibold.woff') format('woff'),
+        url('../font/ProximaNova-SemiBold/ProximaNova-Semibold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Tahoma Regular';
+    src: url('../font/Tahoma/Tahoma.eot');
+    src: url('../font/Tahoma/Tahoma.eot?#iefix') format('embedded-opentype'),
+        url('../font/Tahoma/Tahoma.woff') format('woff'),
+        url('../font/Tahoma/Tahoma.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*variables*/
+@dates:#4090db;
+@menuheading:#262626;
+@stats:#3d4044;
+@wrapperIcons:#ebebeb;
+@inputplaceholder:#333333;
+@icons:#666;
+@white:#fff;
+@black:#000;
+/*mixins*/
+.fontProp(@_ffam,@_fsize,@_fweight,@_color){
+    font-family:@_ffam;
+    font-size:@_fsize;
+    font-weight:@_fweight;
+    color:@_color;
+}
+.trasparentBlock(){
+    &:after{
+        content:'';
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        background-color: #000000;
+        opacity:0.5;
+    }
+}
+// .placeholder(){
+//     &::-webkit-input-placeholder { @content; }
+//     &:-moz-placeholder           { @content; }
+//     &::-moz-placeholder          { @content; }
+//     &:-ms-input-placeholder      { @content; } 
+// }
+/*global*/
+.Mycontainer{
+    width:935px;
+    margin:0 auto;
+}
+p,h1,h2,h3,h4{
+    margin-bottom:0;
+}
+
+.camera-icon{
+    position:relative;
+    &:after{
+        content:'';
+        position:absolute;
+        width: 38px;
+        height: 30px;
+        background:url(../img/camera.png);
+        top:10px;
+        right:25px;
+    }
+}
+            
+/*header*/
+.header{
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+    padding-bottom:28px;
+    padding-top:4px;
+}
+.bg-light{
+    background-color:transparent!important;
+}
+.content-menu{
+    .heading{
+        margin-bottom:20px;
+        h1{
+            .fontProp('Myriad Pro Regular', 35px,400, @menuheading);
+            letter-spacing: -1.4px;
+        }
+        p{
+            .fontProp('Helvetica Neue', 15px, 400, @dates);
+            border: 1px solid @dates;
+            padding:3px 13px;
+            border-radius:3px;
+            letter-spacing: -0.6px;
+            margin-left:20px;
+        }
+    }
+    .stats{
+        .fontProp('Proxima Nova Regular', 17px,400, @stats);
+        letter-spacing: -0.34px;
+        margin-bottom:20px;
+        p{
+            margin-right:30px;
+            &:last-child{
+                margin-right:0;
+            }
+        }
+        span{
+            font-family:'Proxima Nova Bold';
+            font-weight: 700;
+        }
+    }
+    .date{
+        p{
+            .fontProp('Tahoma Regular', 17px, 400, @menuheading);
+            margin-right:23px;
+        }
+        .wrap-for-input{
+            margin-right:24px;
+            width:188px;
+            position:relative;
+            border: 1px solid #cccccc;
+            border-radius:5px;
+            overflow: hidden;
+            &:last-child{
+                margin-right:0px;
+            }
+            div{
+
+                &:hover{
+                    cursor:pointer;
+                }
+                p{
+                    margin-right:0px;
+                    font-size:20px;
+                    color:@icons;
+                }
+                width:32px;
+                background: @wrapperIcons;
+                border-left: 1px solid #cccccc;
+                &:last-child{
+                    width:32px;
+                }
+            }
+        }
+        input{
+            width:122px;
+            background:none;
+            padding:5px 0px 5px 5px;
+            .fontProp('Helvetica Neue',14px,400,@inputplaceholder);
+            border:none;
+        }       
+        ::-webkit-input-placeholder{
+            .fontProp('Helvetica Neue',14px,400,@inputplaceholder);
+        }
+    }
+}
+/*datepicker*/
+.datepicker {
+    .fontProp('Helvetica Neue', 14px, 700, @inputplaceholder);
+    border: 1px solid #b8b8b8;
+    &--day-name{
+        color: #333333;
+        font-size:14px;
+    }
+    &--nav-title i{
+        .fontProp('Helvetica Neue', 14px, 700, @inputplaceholder);
+    }
+}
+/*main*/
+.main-content{
+    background-color: #fafafa;
+    padding: 73px 0;
+}
+.card{
+    position:relative;
+    .trasparentBlock();
+    margin-bottom:30px;
+}
+.last-line{
+    margin-bottom:0px;
+}
+.card-text{
+    position:absolute;
+    top:122px;
+    left:0;
+    right:0;
+    padding:0 55px;
+    &-first-line{
+        top:173px;
+    }
+    &-second{
+        padding:0 30px;
+    }
+    P{
+        .fontProp('Proxima Nova Semibold', 17px, 400, @white);
+        margin-bottom:16px;
+        &:last-child{
+            margin-bottom:0px;
+        }
+    }
+    span{
+        display: block;
+        margin-bottom:14px;
+        .fontProp('Proxima Nova Bold', 17px, 700, @white);
+        i{
+            font-size:18px;
+        }
+        &:last-child{
+            margin-bottom:0px;
+        }
+    }
+    
+}
+.dateApload{
+    .fontProp('Proxima Nova Semibold', 17px, 400, @white);
+    position:absolute;
+    bottom:44px;
+    right:30px;
+    left:30px;
+    &-last-line{
+        bottom:14px;
+    }
+}
+button{
+    border:1px solid @black;
+    background:none;
+    border-radius:20px;
+    margin-top:45px;
+    a{
+        .fontProp('Proxima Nova', 12px, 400, @black);
+        text-transform:uppercase;
+        line-height: 24px;
+        padding:9px 29px;
+        text-decoration:none;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
+
+
+.last-line{
+    @media screen and (min-width:768px) and(max-width:1199px){ 
+        &-last{
+            margin-top:30px;
+        }
+    }
+    @media screen and (max-width:768px){
+        &-last{
+            margin-top:30px;
+        }
+        &-second{
+            margin-top:30px;
+        }
+    }
+}
+
+
+

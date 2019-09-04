@@ -1,0 +1,293 @@
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: local('Helvetica Neue Bold'), local('Helvetica-Neue-Bold'), url('../font/HelveticaNeueCyr-Bold/HelveticaNeueCyr-Bold.woff2') format('woff2'), url('../font/HelveticaNeueCyr-Bold/HelveticaNeueCyr-Bold.woff') format('woff'), url('../font/HelveticaNeueCyr-Bold/HelveticaNeueCyr-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: local('Helvetica Neue Regular'), local('Helvetica-Neue-Regular'), url('../font/HelveticaNeue-Regular/HelveticaNeue.eot'), url('../font/HelveticaNeue-Regular/HelveticaNeue.woff') format('woff'), url('../font/HelveticaNeue-Regular/HelveticaNeue.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Myriad Pro Regular';
+  src: url('../font/MyriadPro/MyriadPro-Regular.eot');
+  src: url('../font/MyriadPro/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'), url('../font/MyriadPro/MyriadPro-Regular.woff') format('woff'), url('../font/MyriadPro/MyriadPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova Regular';
+  src: url('../font/ProximaNova/ProximaNova-Regular.eot');
+  src: url('../font/ProximaNova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), url('../font/ProximaNova/ProximaNova-Regular.woff') format('woff'), url('../font/ProximaNova/ProximaNova-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url('../font/ProximaNovaBold/ProximaNova-Bold.eot');
+  src: url('../font/ProximaNovaBold/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'), url('../font/ProximaNovaBold/ProximaNova-Bold.woff') format('woff'), url('../font/ProximaNovaBold/ProximaNova-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova Semibold';
+  src: url('../font/ProximaNova-SemiBold/ProximaNova-Semibold.eot');
+  src: url('../font/ProximaNova-SemiBold/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'), url('../font/ProximaNova-SemiBold/ProximaNova-Semibold.woff') format('woff'), url('../font/ProximaNova-SemiBold/ProximaNova-Semibold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Tahoma Regular';
+  src: url('../font/Tahoma/Tahoma.eot');
+  src: url('../font/Tahoma/Tahoma.eot?#iefix') format('embedded-opentype'), url('../font/Tahoma/Tahoma.woff') format('woff'), url('../font/Tahoma/Tahoma.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+/*variables*/
+/*mixins*/
+/*global*/
+.Mycontainer {
+  width: 935px;
+  margin: 0 auto;
+}
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 0;
+}
+.camera-icon {
+  position: relative;
+}
+.camera-icon:after {
+  content: '';
+  position: absolute;
+  width: 38px;
+  height: 30px;
+  background: url(../img/camera.png);
+  top: 10px;
+  right: 25px;
+}
+/*header*/
+.header {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+  padding-bottom: 28px;
+  padding-top: 4px;
+}
+.bg-light {
+  background-color: transparent!important;
+}
+.content-menu .heading {
+  margin-bottom: 20px;
+}
+.content-menu .heading h1 {
+  font-family: 'Myriad Pro Regular';
+  font-size: 35px;
+  font-weight: 400;
+  color: #262626;
+  letter-spacing: -1.4px;
+}
+.content-menu .heading p {
+  font-family: 'Helvetica Neue';
+  font-size: 15px;
+  font-weight: 400;
+  color: #4090db;
+  border: 1px solid #4090db;
+  padding: 3px 13px;
+  border-radius: 3px;
+  letter-spacing: -0.6px;
+  margin-left: 20px;
+}
+.content-menu .stats {
+  font-family: 'Proxima Nova Regular';
+  font-size: 17px;
+  font-weight: 400;
+  color: #3d4044;
+  letter-spacing: -0.34px;
+  margin-bottom: 20px;
+}
+.content-menu .stats p {
+  margin-right: 30px;
+}
+.content-menu .stats p:last-child {
+  margin-right: 0;
+}
+.content-menu .stats span {
+  font-family: 'Proxima Nova Bold';
+  font-weight: 700;
+}
+.content-menu .date p {
+  font-family: 'Tahoma Regular';
+  font-size: 17px;
+  font-weight: 400;
+  color: #262626;
+  margin-right: 23px;
+}
+.content-menu .date .wrap-for-input {
+  margin-right: 24px;
+  width: 188px;
+  position: relative;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.content-menu .date .wrap-for-input:last-child {
+  margin-right: 0px;
+}
+.content-menu .date .wrap-for-input div {
+  width: 32px;
+  background: #ebebeb;
+  border-left: 1px solid #cccccc;
+}
+.content-menu .date .wrap-for-input div:hover {
+  cursor: pointer;
+}
+.content-menu .date .wrap-for-input div p {
+  margin-right: 0px;
+  font-size: 20px;
+  color: #666;
+}
+.content-menu .date .wrap-for-input div:last-child {
+  width: 32px;
+}
+.content-menu .date input {
+  width: 122px;
+  background: none;
+  padding: 5px 0px 5px 5px;
+  font-family: 'Helvetica Neue';
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+  border: none;
+}
+.content-menu .date ::-webkit-input-placeholder {
+  font-family: 'Helvetica Neue';
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+}
+/*datepicker*/
+.datepicker {
+  font-family: 'Helvetica Neue';
+  font-size: 14px;
+  font-weight: 700;
+  color: #333333;
+  border: 1px solid #b8b8b8;
+}
+.datepicker--day-name {
+  color: #333333;
+  font-size: 14px;
+}
+.datepicker--nav-title i {
+  font-family: 'Helvetica Neue';
+  font-size: 14px;
+  font-weight: 700;
+  color: #333333;
+}
+/*main*/
+.main-content {
+  background-color: #fafafa;
+  padding: 73px 0;
+}
+.card {
+  position: relative;
+  margin-bottom: 30px;
+}
+.card:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000000;
+  opacity: 0.5;
+}
+.last-line {
+  margin-bottom: 0px;
+}
+.card-text {
+  position: absolute;
+  top: 122px;
+  left: 0;
+  right: 0;
+  padding: 0 55px;
+}
+.card-text-first-line {
+  top: 173px;
+}
+.card-text-second {
+  padding: 0 30px;
+}
+.card-text P {
+  font-family: 'Proxima Nova Semibold';
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.card-text P:last-child {
+  margin-bottom: 0px;
+}
+.card-text span {
+  display: block;
+  margin-bottom: 14px;
+  font-family: 'Proxima Nova Bold';
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+}
+.card-text span i {
+  font-size: 18px;
+}
+.card-text span:last-child {
+  margin-bottom: 0px;
+}
+.dateApload {
+  font-family: 'Proxima Nova Semibold';
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+  position: absolute;
+  bottom: 44px;
+  right: 30px;
+  left: 30px;
+}
+.dateApload-last-line {
+  bottom: 14px;
+}
+button {
+  border: 1px solid #000;
+  background: none;
+  border-radius: 20px;
+  margin-top: 45px;
+}
+button a {
+  font-family: 'Proxima Nova';
+  font-size: 12px;
+  font-weight: 400;
+  color: #000;
+  text-transform: uppercase;
+  line-height: 24px;
+  padding: 9px 29px;
+  text-decoration: none;
+}
+button a:hover {
+  text-decoration: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .last-line-last {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .last-line-last {
+    margin-top: 30px;
+  }
+  .last-line-second {
+    margin-top: 30px;
+  }
+}
